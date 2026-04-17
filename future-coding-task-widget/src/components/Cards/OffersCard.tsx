@@ -1,4 +1,5 @@
 import { Card } from '@/components/ui/simple'
+import { OffersTable } from './OffersTable'
 
 /*
  * - - - - -  - - - - -  - - - - -
@@ -12,7 +13,7 @@ export const OffersCard = () => {
         <Card data-id="OffersCard"
             title="Product Offers"
             className="min-w-100 min-h-25 bg-[#eaf5f9]" >
-            OffersCard
+            <OffersTable />
         </Card>
     )
 }
