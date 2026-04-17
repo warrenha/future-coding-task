@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils"
+import { OffersCard } from '@/components/Cards/OffersCard'
 
 /*
  * - - - - - - - - - - - - - - -
@@ -19,7 +20,7 @@ export const FrontPage = () => {
                 <h1>Future Coding Task</h1>
                 <h2>Widget</h2>
             </div>
-            <div>Hello World!</div>
+            <OffersCard />
         </div>
     )
 }
