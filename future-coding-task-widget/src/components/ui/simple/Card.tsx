@@ -29,11 +29,11 @@ export const Card = (props: Props) => {
                 className
             )}>
             {title && (
-                <h2 className="pb-2 text-[15px] font-[500] py-4 px-5">
+                <h2 className="text-[15px] font-[500] py-4 pb-3 px-5 bg-[#cbdfe7] rounded-tl-[7px] rounded-tr-[7px]">
                     {title}
                 </h2>
             )}
-            <div className="text-[14px] leading-[1.6] pt-2 pb-4 px-5">
+            <div className="text-[14px] leading-[1.6] pt-2 pb-4 px-8">
                 {children}
             </div>
         </div>

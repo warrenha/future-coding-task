@@ -24,7 +24,7 @@ export type OfferItem = {
     match_id: number,  // 907959531
     product_key: string,  // 56456-ad120370"
 
-    image: string,  // "https://.../products/9147591b43e9b932f8d80a733f1f5cb82106e5e5-100-80.jpg.webp"
+    image: string | null,  // "https://.../products/9147591b43e9b932f8d80a733f1f5cb82106e5e5-100-80.jpg.webp"
     model_image: string,  // "https://m.media-amazon.com/images/I/41nq3jfIMPL.jpg"
 
     model: string,  // "Microsoft Xbox One S"

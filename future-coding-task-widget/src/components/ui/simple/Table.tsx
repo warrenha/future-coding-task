@@ -1,3 +1,4 @@
+import { cn } from '@/lib/utils'
 import { Table as TableCn, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
 
 import type { AnyObject } from '@/models/common'
@@ -41,9 +42,14 @@ export const Table = (props: Props) => {
     const renderContent = (r: Row, c: Column) => {
         const value = r[c.field]  // todo check for null/undefined, render ''
         const text = c.fieldText ? r[c.fieldText] : null
+        if (!value || value.length === 0) {
+            return ''
+        }
         return (
             (c.type === 'link') ? (
-                <a href={value}>{text || 'Link'}</a>
+                <a href={value} >
+                    {text || 'Link'}
+                </a>
             ) : (c.type === 'image') ? (
                 <img src={value} alt={text || 'Image'} />
             ) : value
@@ -54,14 +60,15 @@ export const Table = (props: Props) => {
         const key = `${r.id}-${c.field}`
         const content = renderContent(r, c)
         return (
-            <TableCell key={key} className={c.className||''} >
+            <TableCell key={key}
+                className={cn(c.className, 'pr-2')} >
                 {content}
             </TableCell>
         )
     }
 
     const renderRow = (r: Row) => (
-        <TableRow>
+        <TableRow className="border-neutral-300" >
             { columns.map(c => renderCell(r, c)) }
         </TableRow>
     )
@@ -73,12 +80,12 @@ export const Table = (props: Props) => {
             { caption && (caption.length > 0) && (
                 <TableCaption>{caption}</TableCaption>
             )}
-            <TableHeader>
-                <TableRow>
+            <TableHeader className="text-base" >
+                <TableRow className="border-neutral-400" >
                     { columns.map(renderColumn) }
                 </TableRow>
             </TableHeader>
-            <TableBody>
+            <TableBody className="text-base">
                 { data.map(renderRow) }
             </TableBody>
         </TableCn>

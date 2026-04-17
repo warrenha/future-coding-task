@@ -10,7 +10,7 @@ const columns: Column[] = [
     { title: 'Price', field: 'price', className: 'text-right' },
     { title: 'Link', field: 'link', fieldText: 'linkText', type: 'link', className: 'text-center' },
     { title: '', field: 'image', type: 'image', className: 'text-center' },
-    { title: 'Logo', field: 'merchantLogo', type: 'image', className: 'text-center' }
+    { title: 'Merchant', field: 'merchantLogo', type: 'image', className: 'text-center' }
 ]
 
 const getPrice = (o: OfferItem) => (
@@ -22,7 +22,7 @@ const toRow = (o: OfferItem) => ({
     price: getPrice(o),
     link: o?.offer?.link,
     linkText: o?.offer?.link_text,
-    image: o?.image,
+    image: o?.image || null,
     merchantLogo: o?.merchant?.logo_url
 })
 
@@ -40,7 +40,7 @@ export const OffersTable = () => {
     // - - - - - Render - - - - - //
 
     return (
-        <div data-id="OffersTable" >
+        <div data-id="OffersTable">
             { statusLabel ? (
                 <div>{statusLabel}</div>
             ) : (
