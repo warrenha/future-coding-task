@@ -1,6 +1,7 @@
 import { FrontPage } from '@/components/Pages/FrontPage'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
+// Setup tanstack query
 const queryClient = new QueryClient()
 
 /*

@@ -125,6 +125,7 @@
         place-items: center;
         min-width: 320px;
         min-height: 100vh;
+        font-family: "Roboto", sans-serif;
     }
     #root {
         width: 100vw;
@@ -144,5 +145,8 @@
             /* To be consistent with other inputs */
             pointer-events: none;
         }
+    }
+    a {
+        @apply underline text-blue-600 hover:text-blue-800 visited:text-[#b68fc6]
     }
 }
