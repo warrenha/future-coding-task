@@ -1,0 +1,1215 @@
+info:
+  name: Product Search
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: https://search-api.fie.future.net.uk/widget.php?model_name=xbox_one_s&area=US&rows=10
+  params:
+    - name: model_name
+      value: xbox_one_s
+      type: query
+    - name: area
+      value: US
+      type: query
+    - name: rows
+      value: "10"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: xbox_one_s
+    request:
+      url: https://search-api.fie.future.net.uk/widget.php?model_name=xbox_one_s&area=US&rows=10
+      method: GET
+      params:
+        - name: model_name
+          value: xbox_one_s
+          type: query
+        - name: area
+          value: US
+          type: query
+        - name: rows
+          value: "10"
+          type: query
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: date
+          value: Thu, 16 Apr 2026 14:09:06 GMT
+        - name: content-type
+          value: application/json; charset=utf-8;
+        - name: surrogate-key
+          value: a907959531 a400417953 a179160 a204488924 a415872923 a952144607 o250620 o286520 o250600 o232151
+        - name: access-control-allow-credentials
+          value: "true"
+        - name: access-control-allow-headers
+          value: DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,X-Hawk-Country,X-Hawk-Area
+        - name: access-control-allow-methods
+          value: GET
+        - name: access-control-allow-origin
+          value: "*"
+        - name: cache-control
+          value: max-age=1200, stale-if-error=172800, stale-while-revalidate=172800
+        - name: strict-transport-security
+          value: max-age=31536000; includeSubDomains
+        - name: vary
+          value: Accept-Encoding
+        - name: age
+          value: "73859"
+        - name: x-hawk-country
+          value: ""
+        - name: x-hawk-area
+          value: GB
+        - name: x-ftr-cache-status
+          value: HIT
+        - name: accept-ranges
+          value: bytes
+        - name: content-length
+          value: "4240"
+        - name: x-ftr-request-id
+          value: 00000000000000000000FFFF52471438:D2E6_00000000000000000000FFFFB9711934:01BB_69E20E05_4B64260:100DE8
+        - name: x-ftr-balancer
+          value: hawk-kestrel-http-proxy-prod-02
+        - name: x-ftr-backend
+          value: hawk-search-api
+        - name: x-ftr-backend-server
+          value: varnish-red
+      body:
+        type: json
+        data: |-
+          {
+            "widget": {
+              "data": {
+                "model_info": {
+                  "232151": {
+                    "id": 232151,
+                    "brand": null,
+                    "model_name": "Halo Wars 2",
+                    "requested_model": null,
+                    "model_image_url": "https://m.media-amazon.com/images/I/51nyeTbDRUL._SL500_.jpg",
+                    "name": "Halo Wars 2",
+                    "verdict": "Blitz mode aside, Halo Wars 2 sticks with a tried, tested and slightly tired RTS formula that's competent, but lacking in depth and originality.",
+                    "retailer_verdict": null,
+                    "manufacturer_verdict": null,
+                    "pros": [
+                      "Blitz mode is a blast ",
+                      "Gamepad controls work very well ",
+                      "Good story that adds to the Halo universe"
+                    ],
+                    "cons": [
+                      "Unoriginal mechanics",
+                      "Few memorable campaign missions",
+                      "Doesn’t stand out from the competition on PC"
+                    ],
+                    "score": 6,
+                    "review_link": "https://gamesradar.com/halo-wars-2-review",
+                    "parents": [
+                      {
+                        "id": 572363,
+                        "name": "Video Games"
+                      },
+                      {
+                        "id": 286520,
+                        "name": "Gaming"
+                      },
+                      {
+                        "id": 286325,
+                        "name": "Electronics"
+                      },
+                      {
+                        "id": 1,
+                        "name": "Everything"
+                      }
+                    ],
+                    "child_count": null,
+                    "reviews": [],
+                    "pull_quote": null
+                  },
+                  "250600": {
+                    "id": 250600,
+                    "brand": null,
+                    "model_name": "Forza Horizon 3",
+                    "requested_model": null,
+                    "model_image_url": "https://m.media-amazon.com/images/I/51C2ngfW+2L._SL500_.jpg",
+                    "name": "Forza Horizon 3",
+                    "verdict": "A bright, fun and surprisingly substantial racing experience that does interesting things with Forza Horizon 3's core design.",
+                    "retailer_verdict": null,
+                    "manufacturer_verdict": null,
+                    "pros": [],
+                    "cons": [],
+                    "score": 8,
+                    "review_link": "https://pcgamer.com/forza-horizon-3-hot-wheels-review",
+                    "parents": [
+                      {
+                        "id": 572363,
+                        "name": "Video Games"
+                      },
+                      {
+                        "id": 286520,
+                        "name": "Gaming"
+                      },
+                      {
+                        "id": 286325,
+                        "name": "Electronics"
+                      },
+                      {
+                        "id": 1,
+                        "name": "Everything"
+                      }
+                    ],
+                    "child_count": null,
+                    "reviews": {
+                      "asin": {
+                        "review_count": 340,
+                        "review_score": 4.5,
+                        "review_score_formatted": 9,
+                        "area": "US",
+                        "code_name": "asin",
+                        "code_value": "B01GW3LREG",
+                        "reviews_url": "https://target.georiot.com/Proxy.ashx?tsid=8428&GR_URL=https%3A%2F%2Fwww.amazon.com%2Freviews%2FB01GW3LREG%3Ftag%3Dhawk-future-20%26ascsubtag%3Dhawk-custom-tracking-20"
+                      }
+                    },
+                    "pull_quote": null
+                  },
+                  "250620": {
+                    "id": 250620,
+                    "brand": "Microsoft",
+                    "model_name": "Xbox One S",
+                    "requested_model": "xbox_one_s",
+                    "model_image_url": "https://m.media-amazon.com/images/I/41nq3jfIMPL.jpg",
+                    "name": "Microsoft Xbox One S",
+                    "verdict": "Xbox One S is the pinnacle of what Microsoft set out to create with the original Xbox One. Despite releasing in 2016, the One S is everything a game console should be: sleek, powerful and well-stocked. It's not quite at Xbox One X's level in terms of performance, but the Xbox One S makes a compelling argument in how it balances power and price point.",
+                    "retailer_verdict": null,
+                    "manufacturer_verdict": null,
+                    "pros": [
+                      "Vastly reduced physical footprint",
+                      "4K & HDR streaming",
+                      "HDR gaming"
+                    ],
+                    "cons": [
+                      "Needs adapter for Kinect",
+                      "4K gaming limited to upscaling"
+                    ],
+                    "score": 9,
+                    "review_link": "https://techradar.com/reviews/gaming/games-consoles/xbox-one-s-1323399/review",
+                    "parents": [
+                      {
+                        "id": 287135,
+                        "name": "Game Consoles"
+                      },
+                      {
+                        "id": 286520,
+                        "name": "Gaming"
+                      },
+                      {
+                        "id": 286325,
+                        "name": "Electronics"
+                      },
+                      {
+                        "id": 1,
+                        "name": "Everything"
+                      }
+                    ],
+                    "child_count": null,
+                    "reviews": {
+                      "asin": {
+                        "review_count": 225,
+                        "review_score": 4.4,
+                        "review_score_formatted": 9,
+                        "area": "US",
+                        "code_name": "asin",
+                        "code_value": "B01N3QVMAY",
+                        "reviews_url": "https://target.georiot.com/Proxy.ashx?tsid=8428&GR_URL=https%3A%2F%2Fwww.amazon.com%2Freviews%2FB01N3QVMAY%3Ftag%3Dhawk-future-20%26ascsubtag%3Dhawk-custom-tracking-20"
+                      }
+                    },
+                    "pull_quote": null
+                  },
+                  "286520": {
+                    "id": 286520,
+                    "brand": null,
+                    "model_name": "Gaming",
+                    "requested_model": null,
+                    "model_image_url": "https://images.fie.futurecdn.net/models/6e4e1088921fe09983ae8151f27f28d5800a5037.jpg",
+                    "name": "Gaming",
+                    "verdict": null,
+                    "retailer_verdict": null,
+                    "manufacturer_verdict": null,
+                    "pros": [],
+                    "cons": [],
+                    "score": null,
+                    "review_link": null,
+                    "parents": [
+                      {
+                        "id": 286325,
+                        "name": "Electronics"
+                      },
+                      {
+                        "id": 1,
+                        "name": "Everything"
+                      }
+                    ],
+                    "child_count": null,
+                    "reviews": [],
+                    "pull_quote": null
+                  }
+                },
+                "title": "Microsoft Xbox One S",
+                "last_update": 1776315695,
+                "counts": {
+                  "broadband": 0,
+                  "subscriptions": 0,
+                  "contracts": 0,
+                  "deals": 5,
+                  "accessories": 0,
+                  "fallback": 0,
+                  "offers": 0,
+                  "vouchers": 0,
+                  "unique_codes": 0,
+                  "offer_deals": 0,
+                  "newsletter": 0,
+                  "similar": 2,
+                  "multimedia": 0,
+                  "rewards": 0
+                },
+                "offers": [
+                  {
+                    "id": 907959531,
+                    "match_id": 907959531,
+                    "product_key": "56456-ad120370",
+                    "score": 27750,
+                    "percentage": 76,
+                    "click_count": 0,
+                    "click_count_weekly": 0,
+                    "click_count_monthly": 8,
+                    "product_type": 1000,
+                    "bundle_models": [],
+                    "model_matched": [
+                      "Microsoft Xbox One S"
+                    ],
+                    "requested_model": "xbox_one_s",
+                    "is_tenancy": false,
+                    "model": "Microsoft Xbox One S",
+                    "model_id": 250620,
+                    "an": "CJ",
+                    "offer": {
+                      "name": "Download Xbox Series X|S Xbox One Dustborn",
+                      "price": "29.99",
+                      "in_stock": true,
+                      "stock_quantity": null,
+                      "currency_iso": "USD",
+                      "currency_symbol": "&#36;",
+                      "link": "https://www.kqzyfj.com/click-6361382-13502820?url=https%3A%2F%2Fwww.dell.com%2Fen-us%2Fshop%2Fdownload-xbox-series-xs-xbox-one-dustborn%2Fapd%2Fad120370%2Fgaming-gaming-accessories%3Ftfcid%3D33163968&sid=hawk-custom-tracking",
+                      "link_text": "View",
+                      "merchant_link_text": "View at Dell",
+                      "label": "",
+                      "percentage_saving": null,
+                      "percentage_saving_label": null,
+                      "money_saving": null,
+                      "money_saving_label": null,
+                      "product_note": null,
+                      "audience": null,
+                      "display_name": "Microsoft Xbox One S",
+                      "display_labels": "",
+                      "display_primary_label": ""
+                    },
+                    "image": "https://images.fie.futurecdn.net/products/9147591b43e9b932f8d80a733f1f5cb82106e5e5-100-80.jpg.webp",
+                    "label_image": null,
+                    "model_image": "https://m.media-amazon.com/images/I/41nq3jfIMPL.jpg",
+                    "shipping": {
+                      "prime": false,
+                      "url": null
+                    },
+                    "merchant": {
+                      "id": 1925,
+                      "name": "Dell",
+                      "url": "http://www.dell.com/en-us/",
+                      "logo_url": "https://images.fie.futurecdn.net/dtjgztywpah612bk-16685390008939-100-80.png.webp",
+                      "territory": "US",
+                      "preference": 0
+                    },
+                    "last_update": 1769732526,
+                    "labels_formatted": [
+                      {
+                        "type": "brand",
+                        "value": "Microsoft",
+                        "display_value": "Microsoft",
+                        "display_order": 99,
+                        "priority": 0
+                      }
+                    ],
+                    "tracking_pixel_url": "https://www.ftjcfx.com/image-6361382-13502820",
+                    "promos": [
+                      {
+                        "type": "bundle",
+                        "value": "bundle",
+                        "display_value": "bundle"
+                      }
+                    ]
+                  },
+                  {
+                    "id": 400417953,
+                    "match_id": 400417953,
+                    "product_key": "52253-B01L1Y0TCC",
+                    "score": 23533,
+                    "percentage": 99,
+                    "click_count": 0,
+                    "click_count_weekly": 0,
+                    "click_count_monthly": 0,
+                    "product_type": 1000,
+                    "bundle_models": [],
+                    "model_matched": [
+                      "Microsoft Xbox One S"
+                    ],
+                    "requested_model": "xbox_one_s",
+                    "is_tenancy": false,
+                    "model": "Microsoft Xbox One S",
+                    "model_id": 250620,
+                    "an": "Amazonus",
+                    "offer": {
+                      "name": "Xb1 System 500Gb Battlefield",
+                      "price": "299.99",
+                      "in_stock": true,
+                      "stock_quantity": null,
+                      "currency_iso": "USD",
+                      "currency_symbol": "&#36;",
+                      "link": "https://target.georiot.com/Proxy.ashx?tsid=8428&GR_URL=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB01L1Y0TCC%3Ftag%3Dhawk-future-20%26linkCode%3Dogi%26th%3D1%26psc%3D1%26ascsubtag%3Dhawk-custom-tracking-20",
+                      "link_text": "View",
+                      "merchant_link_text": "View at Amazon",
+                      "label": "",
+                      "percentage_saving": null,
+                      "percentage_saving_label": null,
+                      "money_saving": null,
+                      "money_saving_label": null,
+                      "product_note": null,
+                      "audience": null,
+                      "display_name": "Microsoft Xbox One S (500GB White)",
+                      "display_labels": "(500GB White)",
+                      "display_primary_label": "(500GB)"
+                    },
+                    "image": "https://images.fie.futurecdn.net/products/3ebb601a033627c6bd8bdf919de07571807cb126-100-80.jpg.webp",
+                    "label_image": null,
+                    "model_image": "https://m.media-amazon.com/images/I/41nq3jfIMPL.jpg",
+                    "shipping": {
+                      "prime": false,
+                      "url": null
+                    },
+                    "merchant": {
+                      "id": 1471,
+                      "name": "Amazon",
+                      "url": "https://www.amazon.com/",
+                      "logo_url": "https://images.fie.futurecdn.net/logos/merchants/amazon-us-15006529670367-100-80.png.webp",
+                      "territory": "US",
+                      "preference": 0
+                    },
+                    "last_update": 1775292152,
+                    "labels_formatted": [
+                      {
+                        "type": "storage_size",
+                        "value": 500,
+                        "display_value": "500GB",
+                        "display_order": 3,
+                        "priority": 20
+                      },
+                      {
+                        "type": "colour",
+                        "value": "white",
+                        "display_value": "White",
+                        "display_order": 7,
+                        "priority": 5
+                      },
+                      {
+                        "type": "brand",
+                        "value": "Microsoft",
+                        "display_value": "Microsoft",
+                        "display_order": 99,
+                        "priority": 0
+                      }
+                    ]
+                  },
+                  {
+                    "id": 179160,
+                    "match_id": 179160,
+                    "product_key": "2939-B01MS9CY8U",
+                    "score": 22926,
+                    "percentage": 99,
+                    "click_count": 0,
+                    "click_count_weekly": 0,
+                    "click_count_monthly": 0,
+                    "product_type": 1000,
+                    "bundle_models": [
+                      {
+                        "model_id": "232151",
+                        "model_name": "Halo Wars 2",
+                        "model_image": "https://m.media-amazon.com/images/I/51nyeTbDRUL._SL500_.jpg"
+                      }
+                    ],
+                    "model_matched": [
+                      "Microsoft Xbox One S"
+                    ],
+                    "requested_model": "xbox_one_s",
+                    "is_tenancy": false,
+                    "model": "Microsoft Xbox One S",
+                    "model_id": 250620,
+                    "an": "Amazonus",
+                    "offer": {
+                      "name": "Microsoft Xbox One S 1TB Console - Halo Wars 2 Bundle",
+                      "price": "399.98",
+                      "in_stock": true,
+                      "stock_quantity": null,
+                      "currency_iso": "USD",
+                      "currency_symbol": "&#36;",
+                      "link": "https://target.georiot.com/Proxy.ashx?tsid=8428&GR_URL=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB01MS9CY8U%3Ftag%3Dhawk-future-20%26linkCode%3Dogi%26th%3D1%26psc%3D1%26ascsubtag%3Dhawk-custom-tracking-20",
+                      "link_text": "View",
+                      "merchant_link_text": "View at Amazon",
+                      "label": "",
+                      "percentage_saving": null,
+                      "percentage_saving_label": null,
+                      "money_saving": null,
+                      "money_saving_label": null,
+                      "product_note": null,
+                      "audience": null,
+                      "display_name": "Microsoft Xbox One S (1TB White)",
+                      "display_labels": "(1TB White)",
+                      "display_primary_label": "(1TB)"
+                    },
+                    "image": "https://images.fie.futurecdn.net/products/33eef497c8b99143ff1731d5d0c62ffec64c8d53-100-80.jpg.webp",
+                    "label_image": null,
+                    "model_image": "https://m.media-amazon.com/images/I/41nq3jfIMPL.jpg",
+                    "shipping": {
+                      "prime": true,
+                      "url": "https://target.georiot.com/Proxy.ashx?tsid=8428&GR_URL=https%3A%2F%2Famazon.com%2Ftryprimefree%3Ftag%3Dhawk-future-20%26ascsubtag%3Dhawk-custom-tracking-20"
+                    },
+                    "merchant": {
+                      "id": 1471,
+                      "name": "Amazon",
+                      "url": "https://www.amazon.com/",
+                      "logo_url": "https://images.fie.futurecdn.net/logos/merchants/amazon-us-15006529670367-100-80.png.webp",
+                      "territory": "US",
+                      "preference": 0
+                    },
+                    "last_update": 1775880787,
+                    "labels_formatted": [
+                      {
+                        "type": "storage_size",
+                        "value": 1000,
+                        "display_value": "1TB",
+                        "display_order": 3,
+                        "priority": 20
+                      },
+                      {
+                        "type": "colour",
+                        "value": "white",
+                        "display_value": "White",
+                        "display_order": 7,
+                        "priority": 5
+                      },
+                      {
+                        "type": "brand",
+                        "value": "Microsoft",
+                        "display_value": "Microsoft",
+                        "display_order": 99,
+                        "priority": 0
+                      }
+                    ],
+                    "promos": [
+                      {
+                        "type": "bundle",
+                        "value": "Halo Wars 2 bundle",
+                        "display_value": "Halo Wars 2 bundle"
+                      }
+                    ]
+                  },
+                  {
+                    "id": 204488924,
+                    "match_id": 204488924,
+                    "product_key": "2939-B01NAUSD9I",
+                    "score": 22288,
+                    "percentage": 99,
+                    "click_count": 0,
+                    "click_count_weekly": 0,
+                    "click_count_monthly": 0,
+                    "product_type": 1000,
+                    "bundle_models": [
+                      {
+                        "model_id": "250600",
+                        "model_name": "Forza Horizon 3",
+                        "model_image": "https://m.media-amazon.com/images/I/51C2ngfW+2L._SL500_.jpg"
+                      }
+                    ],
+                    "model_matched": [
+                      "Microsoft Xbox One S"
+                    ],
+                    "requested_model": "xbox_one_s",
+                    "is_tenancy": false,
+                    "model": "Microsoft Xbox One S",
+                    "model_id": 250620,
+                    "an": "Amazonus",
+                    "offer": {
+                      "name": "Xbox One S 1TB Console - Forza Horizon 3 Bundle",
+                      "price": "539.84",
+                      "in_stock": true,
+                      "stock_quantity": null,
+                      "currency_iso": "USD",
+                      "currency_symbol": "&#36;",
+                      "link": "https://target.georiot.com/Proxy.ashx?tsid=8428&GR_URL=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB01NAUSD9I%3Ftag%3Dhawk-future-20%26linkCode%3Dogi%26th%3D1%26psc%3D1%26ascsubtag%3Dhawk-custom-tracking-20",
+                      "link_text": "View",
+                      "merchant_link_text": "View at Amazon",
+                      "label": "",
+                      "percentage_saving": null,
+                      "percentage_saving_label": null,
+                      "money_saving": null,
+                      "money_saving_label": null,
+                      "product_note": null,
+                      "audience": null,
+                      "display_name": "Microsoft Xbox One S (1TB White)",
+                      "display_labels": "(1TB White)",
+                      "display_primary_label": "(1TB)"
+                    },
+                    "image": "https://images.fie.futurecdn.net/products/b3e308833522c3d501962e3b8c61611f1da1414b-100-80.jpg.webp",
+                    "label_image": null,
+                    "model_image": "https://m.media-amazon.com/images/I/41nq3jfIMPL.jpg",
+                    "shipping": {
+                      "prime": true,
+                      "url": "https://target.georiot.com/Proxy.ashx?tsid=8428&GR_URL=https%3A%2F%2Famazon.com%2Ftryprimefree%3Ftag%3Dhawk-future-20%26ascsubtag%3Dhawk-custom-tracking-20"
+                    },
+                    "merchant": {
+                      "id": 1471,
+                      "name": "Amazon",
+                      "url": "https://www.amazon.com/",
+                      "logo_url": "https://images.fie.futurecdn.net/logos/merchants/amazon-us-15006529670367-100-80.png.webp",
+                      "territory": "US",
+                      "preference": 0
+                    },
+                    "last_update": 1774276550,
+                    "labels_formatted": [
+                      {
+                        "type": "storage_size",
+                        "value": 1000,
+                        "display_value": "1TB",
+                        "display_order": 3,
+                        "priority": 20
+                      },
+                      {
+                        "type": "colour",
+                        "value": "white",
+                        "display_value": "White",
+                        "display_order": 7,
+                        "priority": 5
+                      },
+                      {
+                        "type": "brand",
+                        "value": "Microsoft",
+                        "display_value": "Microsoft",
+                        "display_order": 99,
+                        "priority": 0
+                      }
+                    ],
+                    "promos": [
+                      {
+                        "type": "bundle",
+                        "value": "Forza Horizon 3 bundle",
+                        "display_value": "Forza Horizon 3 bundle"
+                      }
+                    ]
+                  },
+                  {
+                    "id": 415872923,
+                    "match_id": 415872923,
+                    "product_key": "27002-B07B9P4677",
+                    "score": 22135,
+                    "percentage": 99,
+                    "click_count": 0,
+                    "click_count_weekly": 0,
+                    "click_count_monthly": 0,
+                    "product_type": 1000,
+                    "bundle_models": [],
+                    "model_matched": [
+                      "Microsoft Xbox One S"
+                    ],
+                    "requested_model": "xbox_one_s",
+                    "is_tenancy": false,
+                    "model": "Microsoft Xbox One S",
+                    "model_id": 250620,
+                    "an": "Amazonus",
+                    "offer": {
+                      "name": "Xbox One S 1Tb Console - Starter Bundle (Discontinued)",
+                      "price": "579.99",
+                      "in_stock": true,
+                      "stock_quantity": null,
+                      "currency_iso": "USD",
+                      "currency_symbol": "&#36;",
+                      "link": "https://target.georiot.com/Proxy.ashx?tsid=8428&GR_URL=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB07B9P4677%3Ftag%3Dhawk-future-20%26linkCode%3Dogi%26th%3D1%26psc%3D1%26ascsubtag%3Dhawk-custom-tracking-20",
+                      "link_text": "View",
+                      "merchant_link_text": "View at Amazon",
+                      "label": "",
+                      "percentage_saving": null,
+                      "percentage_saving_label": null,
+                      "money_saving": null,
+                      "money_saving_label": null,
+                      "product_note": null,
+                      "audience": null,
+                      "display_name": "Microsoft Xbox One S (1TB White)",
+                      "display_labels": "(1TB White)",
+                      "display_primary_label": "(1TB)"
+                    },
+                    "image": "https://images.fie.futurecdn.net/products/dd94de86dac6b04268174adc4d67129cae51dfa7-100-80.jpg.webp",
+                    "label_image": null,
+                    "model_image": "https://m.media-amazon.com/images/I/41nq3jfIMPL.jpg",
+                    "shipping": {
+                      "prime": false,
+                      "url": null
+                    },
+                    "merchant": {
+                      "id": 1471,
+                      "name": "Amazon",
+                      "url": "https://www.amazon.com/",
+                      "logo_url": "https://images.fie.futurecdn.net/logos/merchants/amazon-us-15006529670367-100-80.png.webp",
+                      "territory": "US",
+                      "preference": 0
+                    },
+                    "last_update": 1776315695,
+                    "labels_formatted": [
+                      {
+                        "type": "storage_size",
+                        "value": 1000,
+                        "display_value": "1TB",
+                        "display_order": 3,
+                        "priority": 20
+                      },
+                      {
+                        "type": "colour",
+                        "value": "white",
+                        "display_value": "White",
+                        "display_order": 7,
+                        "priority": 5
+                      },
+                      {
+                        "type": "brand",
+                        "value": "Microsoft",
+                        "display_value": "Microsoft",
+                        "display_order": 99,
+                        "priority": 0
+                      }
+                    ]
+                  },
+                  {
+                    "id": 952144607,
+                    "match_id": 952144607,
+                    "product_key": "51589-1138713503",
+                    "score": 20500,
+                    "percentage": 100,
+                    "click_count": 0,
+                    "click_count_weekly": 0,
+                    "click_count_monthly": 0,
+                    "product_type": 200,
+                    "bundle_models": [],
+                    "model_matched": [
+                      "Microsoft Xbox One S"
+                    ],
+                    "requested_model": "xbox_one_s",
+                    "is_tenancy": false,
+                    "model": "Gaming",
+                    "model_id": 286520,
+                    "an": "ImpactRadWalmart",
+                    "offer": {
+                      "name": "Walmart - View Similar",
+                      "price": "0.00",
+                      "in_stock": true,
+                      "stock_quantity": null,
+                      "currency_iso": "USD",
+                      "currency_symbol": "&#36;",
+                      "link": "https://goto.walmart.com/c/1943169/565706/9383?subId1=hawk-custom-tracking&sharedId=hawk&u=https%3A%2F%2Fwww.walmart.com%2Fsearch%3Fq%3DMicrosoft+Xbox+One+S",
+                      "link_text": "Check Walmart",
+                      "merchant_link_text": "Check Walmart",
+                      "label": "No price information",
+                      "percentage_saving": null,
+                      "percentage_saving_label": null,
+                      "money_saving": null,
+                      "money_saving_label": null,
+                      "product_note": null,
+                      "audience": null,
+                      "display_name": "Gaming",
+                      "display_labels": "",
+                      "display_primary_label": ""
+                    },
+                    "image": null,
+                    "label_image": null,
+                    "model_image": "https://m.media-amazon.com/images/I/41nq3jfIMPL.jpg",
+                    "shipping": {
+                      "prime": false,
+                      "url": null
+                    },
+                    "merchant": {
+                      "id": 108180,
+                      "name": "Walmart",
+                      "url": "https://www.walmart.com/",
+                      "logo_url": "https://images.fie.futurecdn.net/logos/merchants/kg7rxut4dskeqa3e-15622498507436-100-80.png.webp",
+                      "territory": "US",
+                      "preference": 0
+                    },
+                    "last_update": 1774387288
+                  }
+                ],
+                "offer_types": [
+                  "deals",
+                  "similar"
+                ],
+                "offer_type": "deals",
+                "event": null,
+                "sponsor": null,
+                "filters": [
+                  {
+                    "category": "category",
+                    "type": "category",
+                    "title": "Category",
+                    "filter_key": "model_name",
+                    "multi_select": true,
+                    "priority": 200,
+                    "values": [
+                      {
+                        "value": "Microsoft Xbox One S Sea of Thieves Bundle",
+                        "formatted_value": "Microsoft Xbox One S Sea of Thieves Bundle",
+                        "count": 1,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      },
+                      {
+                        "value": "Xbox One S All-Digital Edition",
+                        "formatted_value": "Xbox One S All-Digital Edition",
+                        "count": 7,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      }
+                    ]
+                  },
+                  {
+                    "category": "merchant",
+                    "type": "merchant",
+                    "title": "Merchant",
+                    "filter_key": "filter_merchant_name",
+                    "multi_select": true,
+                    "priority": 50,
+                    "values": [
+                      {
+                        "value": "",
+                        "formatted_value": "Any Merchant",
+                        "count": 7,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      },
+                      {
+                        "value": "Amazon",
+                        "formatted_value": "Amazon",
+                        "count": 5,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      },
+                      {
+                        "value": "Dell",
+                        "formatted_value": "Dell",
+                        "count": 1,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      },
+                      {
+                        "value": "Walmart",
+                        "formatted_value": "Walmart",
+                        "count": 1,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      }
+                    ]
+                  },
+                  {
+                    "category": "label",
+                    "type": "label_number_storage_size",
+                    "title": "Storage Size",
+                    "filter_key": "filter_label[number_storage_size]",
+                    "multi_select": true,
+                    "priority": 20,
+                    "values": [
+                      {
+                        "value": "",
+                        "formatted_value": "Any Storage Size",
+                        "count": 6,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      },
+                      {
+                        "value": "500.0",
+                        "formatted_value": "500GB",
+                        "count": 2,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      },
+                      {
+                        "value": "1000.0",
+                        "formatted_value": "1TB",
+                        "count": 4,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      }
+                    ]
+                  },
+                  {
+                    "category": "price",
+                    "type": "price_min",
+                    "title": "Minimum Price",
+                    "filter_key": "filter_min_price",
+                    "multi_select": false,
+                    "priority": 3,
+                    "values": [
+                      {
+                        "value": 0,
+                        "formatted_value": "From $0",
+                        "count": null,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      },
+                      {
+                        "value": 50,
+                        "formatted_value": "From $50",
+                        "count": null,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      },
+                      {
+                        "value": 100,
+                        "formatted_value": "From $100",
+                        "count": null,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      },
+                      {
+                        "value": 150,
+                        "formatted_value": "From $150",
+                        "count": null,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      },
+                      {
+                        "value": 200,
+                        "formatted_value": "From $200",
+                        "count": null,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      },
+                      {
+                        "value": 250,
+                        "formatted_value": "From $250",
+                        "count": null,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      },
+                      {
+                        "value": 300,
+                        "formatted_value": "From $300",
+                        "count": null,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      },
+                      {
+                        "value": 350,
+                        "formatted_value": "From $350",
+                        "count": null,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      },
+                      {
+                        "value": 400,
+                        "formatted_value": "From $400",
+                        "count": null,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      },
+                      {
+                        "value": 500,
+                        "formatted_value": "From $500",
+                        "count": null,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      },
+                      {
+                        "value": 600,
+                        "formatted_value": "From $600",
+                        "count": null,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      },
+                      {
+                        "value": 700,
+                        "formatted_value": "From $700",
+                        "count": null,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      },
+                      {
+                        "value": "",
+                        "formatted_value": "Any Minimum Price",
+                        "count": null,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      }
+                    ]
+                  },
+                  {
+                    "category": "price",
+                    "type": "price_max",
+                    "title": "Maximum Price",
+                    "filter_key": "filter_max_price",
+                    "multi_select": false,
+                    "priority": 3,
+                    "values": [
+                      {
+                        "value": 50,
+                        "formatted_value": "Up to $50",
+                        "count": null,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      },
+                      {
+                        "value": 100,
+                        "formatted_value": "Up to $100",
+                        "count": null,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      },
+                      {
+                        "value": 150,
+                        "formatted_value": "Up to $150",
+                        "count": null,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      },
+                      {
+                        "value": 200,
+                        "formatted_value": "Up to $200",
+                        "count": null,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      },
+                      {
+                        "value": 250,
+                        "formatted_value": "Up to $250",
+                        "count": null,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      },
+                      {
+                        "value": 300,
+                        "formatted_value": "Up to $300",
+                        "count": null,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      },
+                      {
+                        "value": 350,
+                        "formatted_value": "Up to $350",
+                        "count": null,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      },
+                      {
+                        "value": 400,
+                        "formatted_value": "Up to $400",
+                        "count": null,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      },
+                      {
+                        "value": 500,
+                        "formatted_value": "Up to $500",
+                        "count": null,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      },
+                      {
+                        "value": 600,
+                        "formatted_value": "Up to $600",
+                        "count": null,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      },
+                      {
+                        "value": 700,
+                        "formatted_value": "Up to $700",
+                        "count": null,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      },
+                      {
+                        "value": "",
+                        "formatted_value": "Any Maximum Price",
+                        "count": null,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      }
+                    ]
+                  },
+                  {
+                    "category": "label",
+                    "type": "label_text_condition",
+                    "title": "Condition",
+                    "filter_key": "filter_label[text_condition]",
+                    "multi_select": true,
+                    "priority": 0,
+                    "values": [
+                      {
+                        "value": "",
+                        "formatted_value": "Any Condition",
+                        "count": 15,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      },
+                      {
+                        "value": "new",
+                        "formatted_value": "New",
+                        "count": 5,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      },
+                      {
+                        "value": "refurbished",
+                        "formatted_value": "Refurbished",
+                        "count": 10,
+                        "image_url": null,
+                        "mobile_image_url": null,
+                        "tab_active": false,
+                        "description_heading": null,
+                        "description_value": null
+                      }
+                    ]
+                  }
+                ],
+                "pagination": {
+                  "limit": 10,
+                  "limit_contracts": 10,
+                  "limit_deals": 10,
+                  "offset": null
+                }
+              }
+            },
+            "models": {
+              "xbox_one_s": 250620
+            },
+            "area": "US",
+            "battle": null,
+            "version": "master"
+          }
