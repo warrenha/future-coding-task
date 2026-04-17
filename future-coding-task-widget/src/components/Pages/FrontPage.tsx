@@ -14,7 +14,7 @@ export const FrontPage = () => {
         <div
             data-id="FrontPage"
             className={cn(
-                "flex flex-col content-center items-center h-full w-full",
+                "flex flex-col content-center items-center w-full",
                 "text-center overflow-y-auto bg-white text-gray-800 gap-[25px] pt-2 pb-10")} >
             <div className="flex flex-col gap-2" >
                 <h1>Future Coding Task</h1>

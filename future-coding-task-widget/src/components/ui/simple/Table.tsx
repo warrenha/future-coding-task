@@ -4,9 +4,11 @@ import type { AnyObject } from '@/models/common'
 import type { ClassNameProps } from '@/utils'
 
 export type Column = {
-    title?: string | null
-    field: string
-    className?: string | null
+    title?: string | null,
+    field: string,
+    fieldText?: string,  // text to show for a url link
+    className?: string | null,
+    type?: 'text' | 'link' | 'image' // default 'text'
 }
 
 export type Row = AnyObject  // todo use generics instead, incude 'id'
@@ -36,12 +38,24 @@ export const Table = (props: Props) => {
         </TableHead>
     )
 
+    const renderContent = (r: Row, c: Column) => {
+        const value = r[c.field]  // todo check for null/undefined, render ''
+        const text = c.fieldText ? r[c.fieldText] : null
+        return (
+            (c.type === 'link') ? (
+                <a href={value}>{text || 'Link'}</a>
+            ) : (c.type === 'image') ? (
+                <img src={value} alt={text || 'Image'} />
+            ) : value
+        )
+    }
+
     const renderCell = (r: Row, c: Column) => {
         const key = `${r.id}-${c.field}`
-        const value = r[c.field]  // todo check for null/undefined, render ''
+        const content = renderContent(r, c)
         return (
             <TableCell key={key} className={c.className||''} >
-                {value}
+                {content}
             </TableCell>
         )
     }

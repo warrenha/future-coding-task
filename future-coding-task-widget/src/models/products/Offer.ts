@@ -14,7 +14,8 @@ export type Offer = {
     currency_iso: string,  // "USD"
     currency_symbol: string,  // "&#36;"
 
-    link: string  // "https://.../click-6361382-13502820"
+    link: string,  // "https://.../click-6361382-13502820"
+    link_text: string
     // ...
 }
 
