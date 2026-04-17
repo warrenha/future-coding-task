@@ -33,13 +33,13 @@ export const useProductOffers = () => {
     // Simplify for the component
     const statusLabel = isPending ? 'Loading...' :
         isError ? 'Error!' :
-        isSuccess ? 'Done' : ''
+        isSuccess ? null : null
 
     return {
         productOffers: data || null,  // Product | null
         pending: isPending,
         error: isError,
         success: isSuccess,
-        statusLabel
+        statusLabel  // string | null
     }
 }
