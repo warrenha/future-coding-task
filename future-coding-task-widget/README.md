@@ -17,7 +17,7 @@ http://localhost:5173/
 ```
 pnpm run build --base=/widget/
 ```
-This adds the base 'karasu' to urls, so assets can be found using an absolute path.
+This adds the base 'widget' to urls, so assets can be found using an absolute path.
 
 ```
 http://my-server.local/widget
