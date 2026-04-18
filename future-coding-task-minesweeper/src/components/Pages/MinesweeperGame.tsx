@@ -32,7 +32,8 @@ export const MinesweeperGame = (props: Props) => {
         if (cell.type !== 'count') { return '' }
         return cell.count === 1 ? 'text-blue-600' :
             cell.count === 2 ? 'text-green-600' :
-            cell.count === 3 ? 'text-red-600' : ''
+            cell.count === 3 ? 'text-red-600' :
+            cell.count >= 3 ? 'text-yellow-400' : ''
     }
 
     const renderCell = (cell: GridCell) => {
