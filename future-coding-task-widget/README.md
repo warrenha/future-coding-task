@@ -4,6 +4,9 @@ A test for calling an api endpoint, and showing the result product offers.
 
 For details see 'docs/Coding Interview Task - Widget.pdf'
 
+## Screenshot
+![Widget Screenshot](./docs/widget-screenshot.png)
+
 ### Running (Dev)
 To build and run the development server:
 ```

@@ -1,5 +1,5 @@
 import { useProductOffers } from './useProductOffers'
-import type { OfferItem, Product } from '@/models/products'
+import type { OfferItem, Product } from '@/types/products'
 
 const NoOfferItems: OfferItem[] = []  // prevents re-renders
 

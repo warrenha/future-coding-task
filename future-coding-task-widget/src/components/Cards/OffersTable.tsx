@@ -3,7 +3,7 @@ import { decodeHtml } from '@/utils'
 import { Table, type Column, type Row } from '@/components/ui/simple'
 import { useMemo } from 'react'
 
-import type { OfferItem } from '@/models/products'
+import type { OfferItem } from '@/types/products'
 
 const columns: Column[] = [
     { title: 'Product', field: 'offerName', className: 'text-left' },
