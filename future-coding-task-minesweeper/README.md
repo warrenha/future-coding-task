@@ -26,6 +26,9 @@ Using 'Fisher-Yates' to randomize the indices of grid has some advantages. It ha
 
 The method of counting neighboring mines was suggested by ChatGPT, however it was hand coded!
 
+## Screenshot
+![Minesweeper Screenshot](./docs/minesweeper-screenshot.png)
+
 ### Running (Dev)
 To build and run the development server:
 ```
