@@ -24,7 +24,7 @@ The stages are:
 
 Using 'Fisher-Yates' to randomize the indices of grid has some advantages. It has linear time to complete. And it avoids the problem of a random index generator hitting a field that already has a mine.
 
-The method of counting neighboring mines was suggested by chat GPT, however the it was hand coded!
+The method of counting neighboring mines was suggested by chat GPT, however it was hand coded!
 
 ### Running (Dev)
 To build and run the development server:
