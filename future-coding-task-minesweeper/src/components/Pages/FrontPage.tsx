@@ -1,9 +1,9 @@
 import { cn } from "@/lib/utils"
 import { MinesweeperGame } from './MinesweeperGame'
 
-const RowCount = 6
+const RowCount = 8
 const ColumnCount = 8
-const MineCount = 5
+const MineCount = 7
 
 /*
  * - - - - - - - - - - - - - - -
