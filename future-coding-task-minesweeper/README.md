@@ -1,8 +1,8 @@
-# Future Coding Task | Widget
+# Future Coding Task | Minesweeper
 
-A test for calling an api endpoint, and showing the result product offers.
+A coding test that shows a minesweeper grid.
 
-For details see 'docs/Coding Interview Task - Widget.pdf'
+For details see 'docs/Minesweeper-task.pdf'
 
 ### Running (Dev)
 To build and run the development server:
@@ -17,12 +17,12 @@ http://localhost:5173/
 
 ### Building (Prod)
 ```
-pnpm run build --base=/widget/
+pnpm run build --base=/minesweeper/
 ```
-This adds the base 'widget' to urls, so assets can be found using an absolute path.
+This adds the base 'minesweeper' to urls, so assets can be found using an absolute path.
 
 ```
-http://my-server.local/widget
+http://my-server.local/minesweeper
 ```
 
 ### Testing (Integration)

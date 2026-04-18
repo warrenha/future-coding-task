@@ -1,0 +1,151 @@
+@import "tailwindcss";
+
+/*
+ * https://tailwindcss.com/docs/dark-mode#toggling-dark-mode-manually
+ * "If you want your dark theme to be driven by a CSS selector instead of prefers-color-scheme media query,
+ * override the dark variant to use your custom selector:"
+ */
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+/*
+ * Added automatically
+ */
+
+:root {
+    --background: oklch(0.9551 0 0);
+    --foreground: oklch(0.3211 0 0);
+    --card: oklch(0.9702 0 0);
+    --card-foreground: oklch(0.3211 0 0);
+    --primary: oklch(0.4891 0 0);
+    --primary-foreground: oklch(1.0000 0 0);
+    --secondary: oklch(0.9067 0 0);
+    --secondary-foreground: oklch(0.3211 0 0);
+    --muted: oklch(0.8853 0 0);
+    --muted-foreground: oklch(0.5103 0 0);
+    --accent: oklch(0.8078 0 0);
+    --accent-foreground: oklch(0.3211 0 0);
+    --destructive: oklch(0.5594 0.1900 25.8625);
+    --border: oklch(0.8576 0 0);
+    --input: oklch(0.9067 0 0);
+    --ring: oklch(0.88 0.04 237.69); /* --ring: oklch(0.4891 0 0); */
+    --destructive-foreground: oklch(1.0000 0 0);
+
+    --radius: 0.35rem;
+    --letter-spacing: 0em;
+    --spacing: 0.25rem;
+
+    --shadow-color: hsl(0 0% 20% / 0.1);
+    --shadow-opacity: 0.15;
+    --shadow-blur: 0px;
+    --shadow-spread: 0px;
+    --shadow-offset-x: 0px;
+    --shadow-offset-y: 2px;
+    --shadow-2xs: 0px 2px 0px 0px hsl(0 0% 20% / 0.07);
+    --shadow-xs: 0px 2px 0px 0px hsl(0 0% 20% / 0.07);
+    --shadow-sm: 0px 2px 0px 0px hsl(0 0% 20% / 0.15), 0px 1px 2px -1px hsl(0 0% 20% / 0.15);
+    --shadow: 0px 2px 0px 0px hsl(0 0% 20% / 0.15), 0px 1px 2px -1px hsl(0 0% 20% / 0.15);
+    --shadow-md: 0px 2px 0px 0px hsl(0 0% 20% / 0.15), 0px 2px 4px -1px hsl(0 0% 20% / 0.15);
+    --shadow-lg: 0px 2px 0px 0px hsl(0 0% 20% / 0.15), 0px 4px 6px -1px hsl(0 0% 20% / 0.15);
+    --shadow-xl: 0px 2px 0px 0px hsl(0 0% 20% / 0.15), 0px 8px 10px -1px hsl(0 0% 20% / 0.15);
+    --shadow-2xl: 0px 2px 0px 0px hsl(0 0% 20% / 0.38);
+}
+
+@theme inline {
+    --color-ring: var(--ring);
+    --color-input: var(--input);
+    --color-border: var(--border);
+    --color-destructive: var(--destructive);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-accent: var(--accent);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-muted: var(--muted);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-secondary: var(--secondary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-primary: var(--primary);
+    --color-card-foreground: var(--card-foreground);
+    --color-card: var(--card);
+    --color-foreground: var(--foreground);
+    --color-background: var(--background);
+    --color-destructive-foreground: var(--destructive-foreground);
+    --color-shadow-color: var(--shadow-color);
+
+    --radius-sm: calc(var(--radius) * 0.6);
+    --radius-md: calc(var(--radius) * 0.8);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) * 1.4);
+    --radius-2xl: calc(var(--radius) * 1.8);
+    --radius-3xl: calc(var(--radius) * 2.2);
+    --radius-4xl: calc(var(--radius) * 2.6);
+    --radius: 0.35rem;
+
+    --spacing: var(--spacing);
+    --letter-spacing: var(--letter-spacing);
+
+    --shadow-2xl: var(--shadow-2xl);
+    --shadow-xl: var(--shadow-xl);
+    --shadow-lg: var(--shadow-lg);
+    --shadow-md: var(--shadow-md);
+    --shadow: var(--shadow);
+    --shadow-sm: var(--shadow-sm);
+    --shadow-xs: var(--shadow-xs);
+    --shadow-2xs: var(--shadow-2xs);
+    --shadow-offset-y: var(--shadow-offset-y);
+    --shadow-offset-x: var(--shadow-offset-x);
+    --shadow-spread: var(--shadow-spread);
+    --shadow-blur: var(--shadow-blur);
+    --shadow-opacity: var(--shadow-opacity);
+}
+
+/*
+ * Custom defaults added manually for this project.
+ */
+
+:root {
+    color-scheme: light dark;
+
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+
+    font-optical-sizing: auto;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@layer base {
+    body {
+        margin: 0;
+        display: flex;
+        place-items: center;
+        min-width: 320px;
+        min-height: 100vh;
+        font-family: "Roboto", sans-serif;
+    }
+    #root {
+        width: 100vw;
+        height: 100vh;
+    }
+    h1 {
+        font-family: "Roboto Slab", sans-serif;
+        font-size: 24px;
+        text-transform: lowercase;
+    }
+    h2 {
+        font-family: "Source Sans 3", sans-serif;
+        font-size: 18px;
+    }
+    textarea {
+        &:is([disabled]) {
+            /* To be consistent with other inputs */
+            pointer-events: none;
+        }
+    }
+    a {
+        @apply underline text-blue-600 hover:text-blue-800 visited:text-[#b68fc6]
+    }
+}
