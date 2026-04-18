@@ -1,5 +1,5 @@
 import type { OfferItem } from './Offer'
-import type { AnyObject } from '@/models/common/AnyObject'
+import type { AnyObject } from '@/types/common/AnyObject'
 
 // - - - - - Types - - - - - //
 

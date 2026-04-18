@@ -1,7 +1,7 @@
 import { cn } from '@/lib/utils'
 import { Table as TableCn, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
 
-import type { AnyObject } from '@/models/common'
+import type { AnyObject } from '@/types/common'
 import type { ClassNameProps } from '@/utils'
 
 export type Column = {

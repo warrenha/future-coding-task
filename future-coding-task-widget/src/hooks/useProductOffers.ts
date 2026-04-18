@@ -1,8 +1,7 @@
-import { useCallback } from 'react'
-import { useQuery, useQueryClient } from '@tanstack/react-query'
+import { useQuery } from '@tanstack/react-query'
 import { apiGet } from '../api/api'
 
-import type { Product } from '@/models/products'
+import type { Product } from '@/types/products'
 
 const QUERY = '?model_name=xbox_one_s&area=US&rows=10'
 const URL = `https://search-api.fie.future.net.uk/widget.php${QUERY}`
