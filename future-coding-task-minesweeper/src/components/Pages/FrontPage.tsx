@@ -1,4 +1,9 @@
 import { cn } from "@/lib/utils"
+import { MinesweeperGame } from './MinesweeperGame'
+
+const RowCount = 6
+const ColumnCount = 8
+const MineCount = 5
 
 /*
  * - - - - - - - - - - - - - - -
@@ -22,7 +27,11 @@ export const FrontPage = () => {
                     </span>
                 </h1>
             </div>
-            <div>Hello World!</div>
+            <MinesweeperGame
+                rows={RowCount}
+                columns={ColumnCount}
+                mines={MineCount} />
         </div>
     )
 }
+
